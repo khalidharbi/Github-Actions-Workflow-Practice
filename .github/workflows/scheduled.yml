@@ -17,10 +17,10 @@ on:
 
   jobs:
     run-task:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print context
-        run: |
-          echo "Event: $GITHUB_EVENT_NAME"
-          echo "Env input: ${{ inputs.environment }}"
-          echo "Msg: ${{ inputs.message }}"
+     runs-on: ubuntu-latest
+     steps:
+       - name: Print context
+         run: |
+           echo "Event: $GITHUB_EVENT_NAME"
+           echo "Env input: ${{ inputs.environment }}"
+           echo "Msg: ${{ inputs.message }}"
